@@ -1,0 +1,5 @@
+*.ai
+*.psd
+*.vsc
+*.log
+node_modules/
