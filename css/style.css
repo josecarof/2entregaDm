@@ -277,7 +277,6 @@ label{
     grid-template-rows: 566fr 1fr;
     gap: 5px;
     border: #EB601F 1px;
-    background-color: #e30c0c;
     grid-template-areas: 
     "actions actions actions" 
     "filters uno uno"
