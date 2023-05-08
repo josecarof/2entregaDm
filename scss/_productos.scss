@@ -1,0 +1,85 @@
+
+ productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    figcaption {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 10px;
+        color: $keyColor;
+     }
+     img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin:  auto;
+        padding: 5px;
+     }
+     figure{
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+     }
+}
+
+.catalogo{
+   display: grid;
+   grid-template-columns:20% repeat(2,1fr);
+   grid-template-rows: 80px repeat(3,250px);
+   gap: 8px;
+   grid-template-areas: 
+   "actions actions actions" 
+   "filters uno uno"
+   "filters dos tres" 
+   "filters dos cuatro";
+   actions{
+       background-color: #1D252C;
+       padding: 0 28px;
+       grid-area: actions;
+   }
+   filters{
+       grid-area: filters;
+   }
+   prod1{
+       grid-area: uno;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       background-color: #DDDDDD;
+       p{
+           width: 50%;
+           margin-left: 50px;
+       }
+   }
+   prod2{
+       grid-area: dos;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       background-color:$mainColor;
+   }
+   prod3{
+       grid-area: tres;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #DDDDDD;
+   }
+   prod4{
+       grid-area: cuatro;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: #EB601F;
+   }
+   section{
+       border-radius: 3px;
+   }
+}
+        
+        

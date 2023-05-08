@@ -1,0 +1,30 @@
+ /* Estilos para pantallas pequeñas */
+ @media (max-width: 768px) 
+ {
+    nav {
+      display: block;
+      text-align: center;
+      ul {
+        display: none;
+      }
+      a {
+        display: inline-block;
+        margin-bottom: 10px;
+        & :hover{
+            background-color: $keyColor
+          }
+      }
+
+    }
+}
+  
+    /* Títulos */
+    h1, h2 {
+      font-size: $fontBold;
+    }
+  
+    /* Contenedor */
+    .contenedor {
+      width: 90%;
+      margin: 0 auto;
+    }

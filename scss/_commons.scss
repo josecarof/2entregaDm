@@ -1,0 +1,73 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.h1{
+    color: white;
+    font-style: $fontItalic;
+    font-size: $textMd;
+}   
+
+.h2{
+    color: $mainColor;
+    font-size: $fontBold;
+} 
+
+.h3{
+    color: $secondaryColor;
+    font-weight: $fontMedium;
+    font-size: $textMd;
+    line-height: 24px;
+    text-align: center;
+}
+
+.p{
+    color: $secondaryColor;
+    font-weight: $fontUltraL;
+    font-size: $textMd;
+    line-height: 1.5em;
+}  
+
+.header img{
+    width: 100%;
+    }
+    
+.label{
+    color: $mainColor;
+    font-style: italic;
+} 
+
+
+.textCenter{
+   text-align: center;
+} 
+
+.fondoDestacadoO{
+    background-color: $mainColor;
+} 
+
+.fondoDestacadoG{
+    background-color: $mainColor;
+} 
+
+.fondoDestacadoB{
+    background-color: $secondaryColor;
+} 
+//foter//
+
+.footer{
+    
+    padding: 0px 10px;
+    margin: 50px;
+    position: sticky;
+    right: 10px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+    .container {
+    background-color: $keyColor;
+    }
+}

@@ -1,0 +1,55 @@
+
+.tienda{
+    .filters{
+        padding: 0 20px 30px 30px;
+        a{      
+            color: $keyColor;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin-bottom: 4px;}
+            &:hover{
+                color: $mainColor;
+            }
+        span{
+            display: block;
+            color: $keyColor;
+            letter-spacing: 1px;
+        }
+        select{
+            color: $keyColor;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        li{
+            padding-left: 10px;
+            list-style: none;
+            margin-bottom: 12px;
+            font-size: small;
+            font-style: italic;
+        }
+    }
+    .actions{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        button{
+            margin-left:10px;
+            background-color: #EB601F;
+            color: white;
+            padding: 6px;
+            border: none;
+            border-radius: 3px;
+            margin: 10px;
+        }
+    }  input{
+        padding: 6px;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(243, 245, 245);
+        font-style: italic;
+    }
+
+}
+

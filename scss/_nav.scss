@@ -1,0 +1,16 @@
+
+.botonera{
+    background-color:$keyColor;
+    ul{
+        li{
+            margin-left: 5px;
+        }
+            a{
+                color: white;
+                font-size: $textMd;
+                &:hover{
+                    color:$secondaryColor;
+                }
+            }
+    }   
+}
