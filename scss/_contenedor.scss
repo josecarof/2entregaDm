@@ -7,14 +7,21 @@
     position: relative;
 } 
 
-h1,
-h2,
-h3{
+h1{
     margin-bottom: 10px;
     padding: 40px;
     text-align: center;
+    color: #ffffff;
+    font-style: $fontItalic;
 }
 
+h2{
+    margin-bottom: 10px;
+    padding: 40px;
+    text-align: center;
+    color: black;
+    font-style: $fontItalic;
+}
 /* flexbox */
 .contenedor
 {

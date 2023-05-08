@@ -20,20 +20,18 @@
   padding: 0;
 }
 
-h1 {
+.h1 {
   color: white;
   font-style: italic;
   font-size: 1em;
 }
 
-h2 {
-  color: #1D252C;
-  font-style: italic;
-  font-size: 2em;
-  text-align: center;
+.h2 {
+  color: #EB601F;
+  font-size: 700;
 }
 
-h3 {
+.h3 {
   color: #1D252C;
   font-weight: 500;
   font-size: 1em;
@@ -41,44 +39,39 @@ h3 {
   text-align: center;
 }
 
-p {
+.p {
   color: #1D252C;
   font-weight: 100;
   font-size: 1em;
   line-height: 1.5em;
 }
 
-header img {
+.header img {
   width: 100%;
 }
 
-label {
+.label {
   color: #EB601F;
   font-style: italic;
 }
 
-h2Special {
-  color: #ffffff;
+.textCenter {
   text-align: center;
 }
 
-textCenter {
-  text-align: center;
-}
-
-fondoDestacadoO {
+.fondoDestacadoO {
   background-color: #EB601F;
 }
 
-fondoDestacadoG {
+.fondoDestacadoG {
   background-color: #DDDDDD;
 }
 
-fondoDestacadoB {
+.fondoDestacadoB {
   background-color: #1D252C;
 }
 
-footer {
+.footer {
   padding: 0px 10px;
   margin: 50px;
   position: sticky;
@@ -88,7 +81,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer container {
+.footer .container {
   background-color: #DDDDDD;
 }
 
@@ -100,12 +93,20 @@ footer container {
   position: relative;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   margin-bottom: 10px;
   padding: 40px;
   text-align: center;
+  color: #ffffff;
+  font-style: italic;
+}
+
+h2 {
+  margin-bottom: 10px;
+  padding: 40px;
+  text-align: center;
+  color: black;
+  font-style: italic;
 }
 
 /* flexbox */
@@ -367,7 +368,7 @@ productos figure {
 }
 /* Títulos */
 h1, h2 {
-  font-size: 2em;
+  font-size: 700;
 }
 
 /* Contenedor */
