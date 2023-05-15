@@ -1,10 +1,8 @@
 
 .servicios {
-    display: flex;
-    flex-direction: row;
+    @include flexCenter(row,space-between, center);
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+
     figcaption{
         font-size: 1rem;
         text-align: center;

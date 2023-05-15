@@ -31,9 +31,8 @@
         }
     }
     .actions{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        @include flexCenter(row,flex-end, center);
+    
         button{
             margin-left:10px;
             background-color: #EB601F;

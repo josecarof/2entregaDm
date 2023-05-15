@@ -1,7 +1,6 @@
 *{
     font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 .h1{
@@ -22,6 +21,7 @@
     line-height: 24px;
     text-align: center;
 }
+
 
 .p{
     color: $secondaryColor;
@@ -55,19 +55,21 @@
 .fondoDestacadoB{
     background-color: $secondaryColor;
 } 
-//foter//
 
-.footer{
-    
-    padding: 0px 10px;
-    margin: 50px;
-    position: sticky;
-    right: 10px;
-    display: flex;
-    flex-direction:row ;
-    justify-content: space-between;
-    align-items: center;
-    .container {
-    background-color: $keyColor;
-    }
+
+
+.mi-div{
+    background-color: $secondaryColor;
+}
+.maquinas {
+    @include flexCenter(row,space-between, center);
+    flex-wrap: wrap;
+    background-color:$mainColor;
+}
+
+.contacto
+{
+    @include flexCenter(row,space-between, center);
+    flex-wrap: wrap;
+    background-color:$mainColor;
 }

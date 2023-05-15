@@ -1,29 +1,42 @@
-
- productos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    figcaption {
-        font-size: 1rem;
-        text-align: center;
-        margin-top: 10px;
-        color: $keyColor;
-     }
-     img{
+.filters{
+    padding: 0 20px 30px 30px;
+  }
+  
+    .filters a{
+        color: rgb(155, 152, 153);
+        font-size: 1.3em;
+        text-decoration: none;
+        margin-bottom: 4px;
+        
+    }
+  
+        .filters a:hover{
+            color:#EB601F;
+        }
+  
+    .filters span{
         display: block;
-        max-width: 100%;
-        height: auto;
-        margin:  auto;
-        padding: 5px;
-     }
-     figure{
-        flex: 0 0 50%;
-        margin-bottom: 20px;
-     }
-}
-
+        color: #EB601F;
+        margin: 20px 0;
+        letter-spacing: 1px;
+    }
+  
+    .filters select{
+        color: #EB601F;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        font-size: 1.4em;
+    }
+  
+    .filters li{
+        padding-left: 10px;
+        list-style: none;
+        margin-bottom: 12px;
+        font-size: small;
+        font-style: italic;
+        
+    }
 .catalogo{
    display: grid;
    grid-template-columns:20% repeat(2,1fr);
@@ -44,10 +57,7 @@
    }
    prod1{
        grid-area: uno;
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
+       @include flexCenter(row,space-between, center);
        background-color: #DDDDDD;
        p{
            width: 50%;
@@ -56,30 +66,49 @@
    }
    prod2{
        grid-area: dos;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+       @include flexCenter(column,center, center);
        text-align: center;
        background-color:$mainColor;
    }
+
+}
    prod3{
        grid-area: tres;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       @include flexCenter(row,space-between, center);
        background-color: #DDDDDD;
    }
    prod4{
        grid-area: cuatro;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       @include flexCenter(row,space-between, center);
        background: #EB601F;
    }
    section{
        border-radius: 3px;
    }
-}
+
         
+
+.productos {
+    @include flexCenter(row,space-between, center);
+    flex-wrap: wrap;
+    background-color:$secondaryColor;
+    
+    figcaption {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 10px;
+        color: $keyColor;
+     }
+     img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin:  auto;
+        padding: 5px;
+     }
+     figure{
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+     }
+}
         
