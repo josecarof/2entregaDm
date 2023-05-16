@@ -73,3 +73,17 @@
     flex-wrap: wrap;
     background-color:$mainColor;
 }
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-Dm{
+color: $mainColor;
+font-weight: $fontUltraL;
+font-size: $textXl;
+}
+.bg-main{
+background-color: $mainColor;
+}
